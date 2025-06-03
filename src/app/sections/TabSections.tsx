@@ -8,7 +8,7 @@ export default function () {
         <div className="h-auto w-screen p-5 sm:w-100">
           <Image
             className="object-cover"
-            src="/assets/tires_wet.png"
+            src="/US/assets/tires_wet.png"
             alt="hero01.png"
             width="700"
             height="500"

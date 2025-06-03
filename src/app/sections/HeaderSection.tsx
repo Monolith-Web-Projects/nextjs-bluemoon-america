@@ -49,7 +49,7 @@ export default function HeaderSection() {
         <div className="h-auto w-[200px]">
           <Image
             className="object-contain"
-            src="/assets/BMI_Official_Logo_horizontal.png"
+            src="/US/assets/BMI_Official_Logo_horizontal.png"
             alt="bluemoon-Expensive_car"
             width="600"
             height="600"

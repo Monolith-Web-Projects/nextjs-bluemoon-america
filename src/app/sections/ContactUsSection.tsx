@@ -20,7 +20,7 @@ export default function ContactUsSection() {
         <div className="row-start-1 h-auto w-[350px] p-5 sm:col-start-2">
           <Image
             className="w-screen self-center overflow-hidden object-cover"
-            src="/assets/lady_assistant.png"
+            src="/US/assets/lady_assistant.png"
             alt="hero01.png"
             width="2000"
             height="759"

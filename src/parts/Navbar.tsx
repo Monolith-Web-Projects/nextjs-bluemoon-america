@@ -16,7 +16,7 @@ const menu = [
 ];
 
 const icon = {
-  src: "/assets/BMI_Official_Logo_horizontal.png",
+  src: "/US/assets/BMI_Official_Logo_horizontal.png",
   alt: "bluemoon-logo.png",
   width: 200,
   height: 72.33,

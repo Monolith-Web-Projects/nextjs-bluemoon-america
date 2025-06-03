@@ -16,22 +16,22 @@ interface slideData {
 
 const data: slideData[] = [
   {
-    bgimages: "/assets/carousel_truck/blumoon_truck_tires.png",
+    bgimages: "/US/assets/carousel_truck/blumoon_truck_tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
   {
-    bgimages: "/assets/carousel_truck/blumoon_truck_tires.png",
+    bgimages: "/US/assets/carousel_truck/blumoon_truck_tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
   {
-    bgimages: "/assets/carousel_truck/blumoon_truck_tires.png",
+    bgimages: "/US/assets/carousel_truck/blumoon_truck_tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
   {
-    bgimages: "/assets/carousel_truck/blumoon_truck_tires.png",
+    bgimages: "/US/assets/carousel_truck/blumoon_truck_tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },

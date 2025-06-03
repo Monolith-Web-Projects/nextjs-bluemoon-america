@@ -36,21 +36,21 @@ const BottomMenu: BottomMenuData[] = [
 
 const SocialIcon: SocialIconData[] = [
   {
-    src: "/assets/likedin_logo.png",
+    src: "/US/assets/likedin_logo.png",
     alt: "footer_logo",
     width: 50,
     height: 50,
   },
 
   {
-    src: "/assets/facebook_logo.png",
+    src: "/US/assets/facebook_logo.png",
     alt: "footer_logo",
     width: 50,
     height: 50,
   },
 
   {
-    src: "/assets/instagram_logo.png",
+    src: "/US/assets/instagram_logo.png",
     alt: "footer_logo",
     width: 50,
     height: 50,

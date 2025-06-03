@@ -24,7 +24,7 @@ export default function SubscribeBar() {
         <div className="h-auto w-screen">
           <Image
             className="object-cover"
-            src="/assets/subscribe_background.png"
+            src="/US/assets/subscribe_background.png"
             alt="hero01.png"
             width="2000"
             height="759"

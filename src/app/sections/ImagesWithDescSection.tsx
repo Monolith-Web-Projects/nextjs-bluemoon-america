@@ -10,7 +10,7 @@ export default function ImagesWithDescSection() {
             <div className="p-5">
               <Image
                 className="h-auto object-cover"
-                src="/assets/tires_filter.png"
+                src="/US/assets/tires_filter.png"
                 alt="hero01.png"
                 width="2000"
                 height="759"
@@ -27,17 +27,17 @@ export default function ImagesWithDescSection() {
             </h3>
             <div className="grid grid-cols-1 grid-rows-1 justify-items-center gap-0 md:grid-cols-3 lg:gap-4">
               <IconsWithDescription2
-                iconUrl="/assets/shipping_1.png"
+                iconUrl="/US/assets/shipping_1.png"
                 iconTitle="Free Shipping"
                 iconDescription="on many items Same day shipping"
               ></IconsWithDescription2>
               <IconsWithDescription2
-                iconUrl="/assets/shipping_4.png"
+                iconUrl="/US/assets/shipping_4.png"
                 iconTitle="Guarantee Installation"
                 iconDescription="No hidden costs"
               ></IconsWithDescription2>
               <IconsWithDescription2
-                iconUrl="/assets/shipping_5.png"
+                iconUrl="/US/assets/shipping_5.png"
                 iconTitle="Free returns (20 days)"
                 iconDescription="Satisfaction Guarantee"
               ></IconsWithDescription2>

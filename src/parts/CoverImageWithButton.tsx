@@ -49,7 +49,7 @@ export default function CoverImageWithButton({
 
         {/* <Image
           className="absolute"
-          src="/assets/tire-clipart-tire.png"
+          src="/US/assets/tire-clipart-tire.png"
           alt="bluemoon-Expensive_car"
           width="200"
           height="200"
