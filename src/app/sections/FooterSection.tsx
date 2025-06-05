@@ -1,5 +1,6 @@
 import Image from "next/image";
 import FooterMenu from "./FooterMenu";
+import myImageLoader from "@/lib/loader";
 
 export default function FooterSection() {
   return (
@@ -8,8 +9,9 @@ export default function FooterSection() {
         <div className="col-start-1 flex h-full w-full items-center justify-center p-5 sm:p-0">
           <div className="h-auto w-[200px]">
             <Image
+              loader={myImageLoader}
               className="object-contain"
-              src="/US/assets/BMI_Official_Logo_horizontal.png"
+              src="/assets/BMI_Official_Logo_horizontal.png"
               alt="bluemoon-Expensive_car"
               width="600"
               height="600"

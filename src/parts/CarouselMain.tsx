@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import ButtonBluemoon from "./ButtonBluemoon";
+import myImageLoader from "@/lib/loader";
 
 type CarouselPluginProps = {
   images: string[];
@@ -46,6 +47,7 @@ export function CarouselMain({
               className={``}
             >
               <Image
+                loader={myImageLoader}
                 className="h-full w-screen object-cover"
                 src={src}
                 alt={`Images Number: ${index + 1}`}

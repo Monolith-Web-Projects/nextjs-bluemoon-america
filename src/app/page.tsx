@@ -10,7 +10,6 @@ import IconsWithDescription from "@/parts/IconsWithDescription";
 import ImagesWithDescSection from "./sections/ImagesWithDescSection";
 import SubscribeBar from "@/parts/SubscribeBar";
 import { CarouselDistro } from "@/parts/CarouselDistro";
-import { prefix } from "../../lib/prefix";
 
 export default function Home() {
   return (
@@ -18,9 +17,9 @@ export default function Home() {
       <div className="bg-white">
         <CarouselMain
           images={[
-            "/US/assets/hero02.png",
-            "/US/assets/hero02.png",
-            "/US/assets/hero02.png",
+            "/assets/hero02.png",
+            "/assets/hero02.png",
+            "/assets/hero02.png",
           ]}
           carouselHeight="200px"
         ></CarouselMain>
@@ -34,17 +33,17 @@ export default function Home() {
             ></MixedTitle>
             <div className="grid grid-cols-1 grid-rows-1 justify-items-center gap-4 lg:grid-cols-3">
               <IconsWithDescription
-                iconUrl="/US/assets/wheel_1.png"
+                iconUrl="/assets/wheel_1.png"
                 iconTitle="A Wide Variety of Tires and Batteries Available"
                 iconDescription="Discover the perfect blend of performance and reliability with our premium tires and batteries. Elevate your driving experience today"
               ></IconsWithDescription>
               <IconsWithDescription
-                iconUrl="/US/assets/shipping_1.png"
+                iconUrl="/assets/shipping_1.png"
                 iconTitle="24/7 Emergency Roadside Assistance Available"
                 iconDescription="Our products are designed to withstand the toughest conditions."
               ></IconsWithDescription>
               <IconsWithDescription
-                iconUrl="/US/assets/repair_1.png"
+                iconUrl="/assets/repair_1.png"
                 iconTitle="Comprehensive Warranty and shipping for Peace of Mind"
                 iconDescription="We're here to help you, day or night Enjoy confidence with our extensive warranty coverage on all products"
               ></IconsWithDescription>
@@ -68,7 +67,7 @@ export default function Home() {
         </section>
 
         <CoverImage
-          bgimages="/US/assets/cover_banner.png"
+          bgimages="/assets/cover_banner.png"
           title="Experience Unmatched Performance and Safety"
           description="Our tires and oils are engineered for excellence, ensuring optimal performance on every journey. Choose us for enhanced safety and reliability on the road."
         ></CoverImage>
@@ -78,7 +77,7 @@ export default function Home() {
         <ContactUsSection></ContactUsSection>
 
         <CoverImageWithButton
-          bgimages="/US/assets/bluemoon_offroad.png"
+          bgimages="/assets/bluemoon_offroad.png"
           title="CHALLENGE YOURSELF TO TRAVEL THE MOST CHALLENGING PATHS"
         ></CoverImageWithButton>
 

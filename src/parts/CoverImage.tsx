@@ -1,4 +1,6 @@
 import Image from "next/image";
+import myImageLoader from "@/lib/loader";
+
 type CoverImageProps = {
   title?: string;
   description?: string;
@@ -15,6 +17,7 @@ export default function CoverImage({
       {bgimages && (
         <div className="flex h-full w-screen overflow-clip">
           <Image
+            loader={myImageLoader}
             className="h-full w-full self-stretch object-cover object-center"
             src={bgimages}
             alt="bluemoon-Expensive_car"

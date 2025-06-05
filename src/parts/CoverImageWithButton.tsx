@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ButtonBluemoon from "./ButtonBluemoon";
+import myImageLoader from "@/lib/loader";
 
 type CoverImageWithButtonProps = {
   title?: string;
@@ -17,6 +18,7 @@ export default function CoverImageWithButton({
       {bgimages && (
         <div className="flex h-full w-screen overflow-clip">
           <Image
+          loader={myImageLoader}
             className="h-full w-full self-stretch object-cover object-center"
             src={bgimages}
             alt="bluemoon-Expensive_car"
@@ -49,7 +51,7 @@ export default function CoverImageWithButton({
 
         {/* <Image
           className="absolute"
-          src="/US/assets/tire-clipart-tire.png"
+          src="/assets/tire-clipart-tire.png"
           alt="bluemoon-Expensive_car"
           width="200"
           height="200"

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import ButtonBluemoon from "./ButtonBluemoon";
+import myImageLoader from "@/lib/loader";
 
 type CardsBluemoonProps = {
   bgimages: string;
@@ -40,6 +41,7 @@ export default function CardsBluemoon({
         {/* Images */}
         <div className="absolute top-1/2 left-1/2 h-3/4 w-full -translate-x-1/2 -translate-y-1/2 overflow-clip rounded-4xl bg-[var(--white-seasalt)]">
           <Image
+            loader={myImageLoader}
             className="object-contain"
             src={bgimages}
             alt="hero01.png"

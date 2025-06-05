@@ -1,5 +1,6 @@
 import TabsBluemoon from "@/parts/TabsBluemoon";
 import Image from "next/image";
+import myImageLoader from "@/lib/loader";
 
 export default function () {
   return (
@@ -7,8 +8,9 @@ export default function () {
       <div className="grid w-screen grid-cols-1 grid-rows-1 justify-items-center gap-5 overflow-x-clip p-5 sm:grid-cols-[1fr_2fr]">
         <div className="h-auto w-screen p-5 sm:w-100">
           <Image
+            loader={myImageLoader}
             className="object-cover"
-            src="/US/assets/tires_wet.png"
+            src="/assets/tires_wet.png"
             alt="hero01.png"
             width="700"
             height="500"

@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import CardsBluemoon from "@/parts/CardsBluemoon";
 import Image from "next/image";
+import myImageLoader from "@/lib/loader";
 
 interface slideData {
   bgimages: string;
@@ -17,37 +18,37 @@ interface slideData {
 
 const data: slideData[] = [
   {
-    bgimages: "/US/assets/carousel_distributor/bf_goodrich.png",
+    bgimages: "/assets/carousel_distributor/bf_goodrich.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
 
   {
-    bgimages: "/US/assets/carousel_distributor/continental.png",
+    bgimages: "/assets/carousel_distributor/continental.png",
     buttontext: "Schedule Apointment",
     cardwidth: "300px",
   },
 
   {
-    bgimages: "/US/assets/carousel_distributor/cooper_tires.png",
+    bgimages: "/assets/carousel_distributor/cooper_tires.png",
     buttontext: "Schedule Apointment",
     cardwidth: "300px",
   },
 
   {
-    bgimages: "/US/assets/carousel_distributor/falken_tires.png",
+    bgimages: "/assets/carousel_distributor/falken_tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
 
   {
-    bgimages: "/US/assets/carousel_distributor/genral_tires.png",
+    bgimages: "/assets/carousel_distributor/genral_tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
 
   {
-    bgimages: "/US/assets/carousel_distributor/michelin.png",
+    bgimages: "/assets/carousel_distributor/michelin.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
@@ -71,6 +72,7 @@ export function CarouselDistro() {
             <CarouselItem className="flex basis-1 justify-center sm:basis-1/2">
               {item.bgimages && item.buttontext && item.cardwidth && (
                 <Image
+                  loader={myImageLoader}
                   className="object-cover"
                   src={item.bgimages}
                   alt="hero01.png"

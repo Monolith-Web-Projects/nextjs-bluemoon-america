@@ -16,22 +16,22 @@ interface slideData {
 
 const data: slideData[] = [
   {
-    bgimages: "/US/assets/carousel_motorcycle/Motorcycle_Tires.png",
+    bgimages: "/assets/carousel_motorcycle/Motorcycle_Tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
   {
-    bgimages: "/US/assets/carousel_motorcycle/Motorcycle_Tires.png",
+    bgimages: "/assets/carousel_motorcycle/Motorcycle_Tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
   {
-    bgimages: "/US/assets/carousel_motorcycle/Motorcycle_Tires.png",
+    bgimages: "/assets/carousel_motorcycle/Motorcycle_Tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
   {
-    bgimages: "/US/assets/carousel_motorcycle/Motorcycle_Tires.png",
+    bgimages: "/assets/carousel_motorcycle/Motorcycle_Tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },

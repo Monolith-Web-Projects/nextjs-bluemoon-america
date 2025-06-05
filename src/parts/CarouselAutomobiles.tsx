@@ -16,37 +16,37 @@ interface slideData {
 
 const data: slideData[] = [
   {
-    bgimages: "/US/assets/carousel_automobils/car_tires.png",
+    bgimages: "/assets/carousel_automobils/car_tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
 
   {
-    bgimages: "/US/assets/carousel_automobils/car_tires.png",
+    bgimages: "/assets/carousel_automobils/car_tires.png",
     buttontext: "Schedule Apointment",
     cardwidth: "300px",
   },
 
   {
-    bgimages: "/US/assets/carousel_automobils/car_tires.png",
+    bgimages: "/assets/carousel_automobils/car_tires.png",
     buttontext: "Schedule Apointment",
     cardwidth: "300px",
   },
 
   {
-    bgimages: "/US/assets/carousel_automobils/car_tires.png",
+    bgimages: "/assets/carousel_automobils/car_tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
 
   {
-    bgimages: "/US/assets/carousel_automobils/car_tires.png",
+    bgimages: "/assets/carousel_automobils/car_tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
 
   {
-    bgimages: "/US/assets/carousel_automobils/car_tires.png",
+    bgimages: "/assets/carousel_automobils/car_tires.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },

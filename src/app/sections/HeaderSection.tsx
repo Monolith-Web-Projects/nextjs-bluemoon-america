@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/parts/Navbar";
+import myImageLoader from "@/lib/loader";
 
 type HeaderMenuProps = {
   menuUrl?: string;
@@ -48,8 +49,9 @@ export default function HeaderSection() {
       <div className="flex items-center justify-between p-5">
         <div className="h-auto w-[200px]">
           <Image
+            loader={myImageLoader}
             className="object-contain"
-            src="/US/assets/BMI_Official_Logo_horizontal.png"
+            src="/assets/BMI_Official_Logo_horizontal.png"
             alt="bluemoon-Expensive_car"
             width="600"
             height="600"

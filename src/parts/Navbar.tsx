@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import myImageLoader from "@/lib/loader";
 
 // Define the type for props
 interface MenuItemProps {
@@ -16,7 +17,7 @@ const menu = [
 ];
 
 const icon = {
-  src: "/US/assets/BMI_Official_Logo_horizontal.png",
+  src: "/assets/BMI_Official_Logo_horizontal.png",
   alt: "bluemoon-logo.png",
   width: 200,
   height: 72.33,
@@ -41,6 +42,7 @@ export default function Navbar({}) {
     >
       {/* Site Logo */}
       <Image
+        loader={myImageLoader}
         src={icon.src}
         alt={icon.alt}
         width={icon.width}

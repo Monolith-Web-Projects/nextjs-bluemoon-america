@@ -1,4 +1,5 @@
 import Image from "next/image";
+import myImageLoader from "@/lib/loader";
 
 interface TopMenuData {
   menuUrl?: string;
@@ -36,21 +37,21 @@ const BottomMenu: BottomMenuData[] = [
 
 const SocialIcon: SocialIconData[] = [
   {
-    src: "/US/assets/likedin_logo.png",
+    src: "/assets/likedin_logo.png",
     alt: "footer_logo",
     width: 50,
     height: 50,
   },
 
   {
-    src: "/US/assets/facebook_logo.png",
+    src: "/assets/facebook_logo.png",
     alt: "footer_logo",
     width: 50,
     height: 50,
   },
 
   {
-    src: "/US/assets/instagram_logo.png",
+    src: "/assets/instagram_logo.png",
     alt: "footer_logo",
     width: 50,
     height: 50,
@@ -108,6 +109,7 @@ function SocialIcons() {
         <div key={index}>
           {item.src && item.alt && item.width && item.height && (
             <Image
+              loader={myImageLoader}
               className="object-cover"
               src={item.src}
               alt={item.alt}

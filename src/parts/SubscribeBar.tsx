@@ -1,6 +1,7 @@
 // subscribe_background.png
 import Image from "next/image";
 import ButtonBluemoon2 from "./ButtonBluemoon2";
+import myImageLoader from "@/lib/loader";
 
 export default function SubscribeBar() {
   return (
@@ -23,8 +24,9 @@ export default function SubscribeBar() {
         {/* BG Images */}
         <div className="h-auto w-screen">
           <Image
+            loader={myImageLoader}
             className="object-cover"
-            src="/US/assets/subscribe_background.png"
+            src="/assets/subscribe_background.png"
             alt="hero01.png"
             width="2000"
             height="759"

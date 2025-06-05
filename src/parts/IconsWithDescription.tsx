@@ -1,4 +1,5 @@
 import Image from "next/image";
+import myImageLoader from "@/lib/loader";
 
 type IconsWithDescriptionProps = {
   iconUrl: string;
@@ -16,6 +17,7 @@ export default function IconsWithDescription({
       <div className="block size-auto justify-items-center">
         <div className="mb-5 h-40 w-40">
           <Image
+          loader={myImageLoader}
             className="object-contain"
             src={iconUrl}
             alt="hero01.png"

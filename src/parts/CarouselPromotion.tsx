@@ -16,37 +16,37 @@ interface slideData {
 
 const data: slideData[] = [
   {
-    bgimages: "/US/assets/Card_Mazda.png",
+    bgimages: "/assets/Card_Mazda.png",
     buttontext: "Schedule Appointment",
     cardwidth: "500px",
   },
 
   {
-    bgimages: "/US/assets/Card_Renault.png",
+    bgimages: "/assets/Card_Renault.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
 
   {
-    bgimages: "/US/assets/Card_Mazda.png",
+    bgimages: "/assets/Card_Mazda.png",
     buttontext: "Schedule Appointment",
     cardwidth: "500px",
   },
 
   {
-    bgimages: "/US/assets/Card_Mazda.png",
+    bgimages: "/assets/Card_Mazda.png",
     buttontext: "Schedule Appointment",
     cardwidth: "500px",
   },
 
   {
-    bgimages: "/US/assets/Card_Mazda.png",
+    bgimages: "/assets/Card_Mazda.png",
     buttontext: "Schedule Appointment",
     cardwidth: "500px",
   },
 
   {
-    bgimages: "/US/assets/Card_Renault.png",
+    bgimages: "/assets/Card_Renault.png",
     buttontext: "Schedule Appointment",
     cardwidth: "300px",
   },
