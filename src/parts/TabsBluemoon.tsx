@@ -37,7 +37,7 @@ export default function TabsBluemoon() {
           {/* Fullscreen selector */}
 
           {/* Mobile selector */}
-          <div className="block sm:hidden">
+          <div className="block p-5 sm:hidden">
             <Select>
               <SelectTrigger className="w-auto">
                 <SelectValue placeholder="Choose Category" />

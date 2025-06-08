@@ -1,15 +1,14 @@
-import Image from "next/image";
-import CoverImage from "@/parts/CoverImage";
-import CoverImageWithButton from "@/parts/CoverImageWithButton";
-import TabSections from "./sections/TabSections";
-import { CarouselPromotion } from "@/parts/CarouselPromotion";
 import { CarouselMain } from "@/parts/CarouselMain";
+import { CarouselPromotion } from "@/parts/CarouselPromotion";
+import { CarouselDistro } from "@/parts/CarouselDistro";
+import TabSections from "./sections/TabSections";
 import ContactUsSection from "./sections/ContactUsSection";
 import MixedTitle from "@/parts/MixedTitle";
-import IconsWithDescription from "@/parts/IconsWithDescription";
+import CoverImage from "@/parts/CoverImage";
 import ImagesWithDescSection from "./sections/ImagesWithDescSection";
+import CoverImageWithButton from "@/parts/CoverImageWithButton";
+import IconsWithDescription from "@/parts/IconsWithDescription";
 import SubscribeBar from "@/parts/SubscribeBar";
-import { CarouselDistro } from "@/parts/CarouselDistro";
 
 export default function Home() {
   return (
@@ -91,8 +90,7 @@ export default function Home() {
               top-quality service
             </span>
           </p>
-          <div className="w-3/4 p-5">
-            <div className="my-5 flex w-screen flex-col items-center justify-center"></div>
+          <div className="my-5 flex w-screen flex-col items-center justify-center p-5">
             <CarouselDistro></CarouselDistro>
           </div>
         </section>

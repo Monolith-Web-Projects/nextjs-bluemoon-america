@@ -77,7 +77,9 @@ function Dropdown() {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 z-10 mt-2 flex h-auto w-auto max-w-45 min-w-30 items-end justify-center rounded-md bg-[#00000070] shadow-xl ring-1 ring-black/30 backdrop-blur-lg">
+        <div
+          className={`absolute right-0 z-50 mt-2 flex h-auto w-auto max-w-45 min-w-30 items-end justify-center rounded-md bg-[#000000b9] shadow-xl ring-1 ring-black/30 backdrop-blur-sm`}
+        >
           {/* Nav Menu */}
           <nav
             onClick={() => setIsOpen(!isOpen)}

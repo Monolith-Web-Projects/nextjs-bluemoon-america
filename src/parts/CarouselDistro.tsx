@@ -12,45 +12,31 @@ import myImageLoader from "@/lib/loader";
 
 interface slideData {
   bgimages: string;
-  buttontext: string;
-  cardwidth: string;
 }
 
 const data: slideData[] = [
   {
     bgimages: "/assets/carousel_distributor/bf_goodrich.png",
-    buttontext: "Schedule Appointment",
-    cardwidth: "300px",
   },
 
   {
     bgimages: "/assets/carousel_distributor/continental.png",
-    buttontext: "Schedule Apointment",
-    cardwidth: "300px",
   },
 
   {
     bgimages: "/assets/carousel_distributor/cooper_tires.png",
-    buttontext: "Schedule Apointment",
-    cardwidth: "300px",
   },
 
   {
     bgimages: "/assets/carousel_distributor/falken_tires.png",
-    buttontext: "Schedule Appointment",
-    cardwidth: "300px",
   },
 
   {
     bgimages: "/assets/carousel_distributor/genral_tires.png",
-    buttontext: "Schedule Appointment",
-    cardwidth: "300px",
   },
 
   {
     bgimages: "/assets/carousel_distributor/michelin.png",
-    buttontext: "Schedule Appointment",
-    cardwidth: "300px",
   },
 ];
 
@@ -60,30 +46,33 @@ export function CarouselDistro() {
   );
 
   return (
-    <Carousel
-      plugins={[plugin.current]}
-      className="h-[100px] w-screen"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
-    >
-      <CarouselContent className="h-auto w-auto">
-        {data.map((item, index) => (
-          <div key={index} className="w-150">
-            <CarouselItem className="flex basis-1 justify-center sm:basis-1/2">
-              {item.bgimages && item.buttontext && item.cardwidth && (
+    <div className="flex w-screen flex-col items-center justify-center overflow-hidden sm:w-full">
+      <Carousel
+        plugins={[plugin.current]}
+        className="h-[100px]"
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
+      >
+        <CarouselContent className="-mx-5 w-screen">
+          {data.map((item, index) => (
+            <CarouselItem
+              key={index}
+              className="flex h-full basis-11/12 items-center justify-center sm:basis-1/5"
+            >
+              <div className="h-20 w-70">
                 <Image
                   loader={myImageLoader}
+                  width={500}
+                  height={500}
                   className="object-cover"
                   src={item.bgimages}
                   alt="hero01.png"
-                  width="2000"
-                  height="759"
                 ></Image>
-              )}
+              </div>
             </CarouselItem>
-          </div>
-        ))}
-      </CarouselContent>
-    </Carousel>
+          ))}
+        </CarouselContent>
+      </Carousel>
+    </div>
   );
 }
