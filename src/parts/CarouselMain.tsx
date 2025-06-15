@@ -82,7 +82,7 @@ export function CarouselMain({
         <div className="absolute bottom-1/6 left-1/2 -translate-x-1/2 p-5 sm:right-1/4 sm:bottom-1/6 sm:translate-x-1/2">
           <ButtonBluemoon
             buttonText="LEARN MORE"
-            buttonUrl="/login"
+            buttonUrl="/"
           ></ButtonBluemoon>
         </div>
       </Carousel>

@@ -1,17 +1,15 @@
-# 1. Build stage
+# Stage 1 (Builder)
 FROM node:24-alpine AS builder
 
 WORKDIR /app
 
-# Install dependencies
 COPY package.json package-lock.json ./
 RUN npm install
 
-# Copy all files & build
 COPY . .
 RUN npm run build
 
-# 2. Production stage
+# Stage 2 (Runner)
 FROM node:24-alpine AS runner
 
 ENV NODE_ENV=production
