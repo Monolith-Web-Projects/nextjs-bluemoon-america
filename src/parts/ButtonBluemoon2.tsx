@@ -1,3 +1,8 @@
+"use client";
+
+import { useState } from "react";
+import { getCsrfToken } from "@/lib/utils";
+
 type ButtonBluemoon2Props = {
   buttonText?: string;
   email?: string;
@@ -7,23 +12,39 @@ export default function ButtonBluemoon2({
   buttonText = "No Text Configured",
   email,
 }: ButtonBluemoon2Props) {
-  const handleClick = async () => {
-    if (!email) return alert("Please eneter a valid email.");
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
 
-    const res = await fetch("/api/sent-email", {
+  const handleClick = async () => {
+    setLoading(true);
+    const csrfToken = await getCsrfToken();
+
+    const response = await fetch("http://localhost:8000/api/send-email/", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRFToken": csrfToken || "",
+      },
       body: JSON.stringify({
-        to: email,
-        subject: "Thank You for subscribing!",
-        message: "You’ve been added to our newsletter. Welcome!",
+        subject: "Test Email CSRF",
+        message: "Hello!",
+        recipient: email,
       }),
     });
 
-    const data = await res.json();
-    alert(data.success ? "Email sent!" : `Failed: ${data.console.error}`);
-  };
+    if (response.ok) {
+      setStatus("Email sent successfully!");
+    } else {
+      setStatus("Failed to send email.");
+    }
+    if (!email) return alert("Please eneter a valid email.");
 
+    const data = await response.json();
+    alert(data.success ? "Email sent!" : `Failed: ${data.console.error}`);
+
+    setLoading(false);
+  };
   return (
     <div className="relative flex items-center justify-center p-7">
       <button onClick={handleClick}>

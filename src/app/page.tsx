@@ -9,6 +9,8 @@ import ImagesWithDescSection from "./sections/ImagesWithDescSection";
 import CoverImageWithButton from "@/parts/CoverImageWithButton";
 import IconsWithDescription from "@/parts/IconsWithDescription";
 import SubscribeBar from "@/parts/SubscribeBar";
+import Image from "next/image";
+import myImageLoader from "@/lib/loader";
 
 export default function Home() {
   return (

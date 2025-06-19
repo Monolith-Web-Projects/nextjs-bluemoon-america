@@ -18,7 +18,7 @@ export default function CoverImageWithButton({
       {bgimages && (
         <div className="flex h-full w-screen overflow-clip">
           <Image
-          loader={myImageLoader}
+            loader={myImageLoader}
             className="h-full w-full self-stretch object-cover object-center"
             src={bgimages}
             alt="bluemoon-Expensive_car"
@@ -48,14 +48,6 @@ export default function CoverImageWithButton({
             <ButtonBluemoon buttonText="Learn More!"></ButtonBluemoon>
           </div>
         </div>
-
-        {/* <Image
-          className="absolute"
-          src="/assets/tire-clipart-tire.png"
-          alt="bluemoon-Expensive_car"
-          width="200"
-          height="200"
-        ></Image> */}
       </div>
     </section>
   );
