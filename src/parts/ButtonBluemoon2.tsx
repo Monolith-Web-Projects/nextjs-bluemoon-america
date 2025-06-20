@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { getCsrfToken } from "@/lib/utils";
-import config from "@/lib/config";
 
 type ButtonBluemoon2Props = {
   buttonText?: string;
@@ -18,14 +16,15 @@ export default function ButtonBluemoon2({
 
   const handleClick = async () => {
     setLoading(true);
-    const csrfToken = await getCsrfToken();
+    if (!email) {
+      alert("Please enter a valid email.");
+      return;
+    }
 
-    const response = await fetch(`${config.apiBaseUrl}/api/send-email/`, {
+    const response = await fetch("/api/send-email", {
       method: "POST",
-      credentials: "include",
       headers: {
         "Content-Type": "application/json",
-        "X-CSRFToken": csrfToken || "",
       },
       body: JSON.stringify({
         subject: "Test Email CSRF",
@@ -34,18 +33,19 @@ export default function ButtonBluemoon2({
       }),
     });
 
+    const data = await response.json();
+
     if (response.ok) {
       setStatus("Email sent successfully!");
+      alert("Email sent!");
     } else {
       setStatus("Failed to send email.");
+      alert(`Failed: ${data.error}`);
     }
-    if (!email) return alert("Please eneter a valid email.");
-
-    const data = await response.json();
-    alert(data.success ? "Email sent!" : `Failed: ${data.console.error}`);
 
     setLoading(false);
   };
+
   return (
     <div className="relative flex items-center justify-center p-7">
       <button onClick={handleClick}>
