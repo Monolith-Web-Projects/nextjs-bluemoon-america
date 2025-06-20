@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { getCsrfToken } from "@/lib/utils";
+import config from "@/lib/config";
 
 type ButtonBluemoon2Props = {
   buttonText?: string;
@@ -19,7 +20,7 @@ export default function ButtonBluemoon2({
     setLoading(true);
     const csrfToken = await getCsrfToken();
 
-    const response = await fetch("http://localhost:8000/api/send-email/", {
+    const response = await fetch(`${config.apiBaseUrl}/api/send-email/`, {
       method: "POST",
       credentials: "include",
       headers: {

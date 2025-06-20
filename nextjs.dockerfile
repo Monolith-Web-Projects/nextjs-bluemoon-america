@@ -16,7 +16,13 @@ ENV NODE_ENV=production
 WORKDIR /app
 
 # Optional: Install tools in the production container
-RUN apk add --no-cache nano tree zip unzip bash
+RUN apk update && apk add --no-cache \
+    netcat-openbsd \
+    curl \
+    nano \
+    tree \
+    zip \
+    && unzip
 
 # Copy runtime files only
 COPY --from=builder /app/public ./public
